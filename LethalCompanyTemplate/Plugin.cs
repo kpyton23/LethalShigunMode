@@ -118,7 +118,7 @@ public static class EmoteDamagePatch
             if (hittable != null && hit.transform != instance.transform) // 자기 자신은 제외
             {
                 // 즉사급 데미지
-                hittable.Hit(20, instance.gameplayCamera.transform.forward, instance, true, 1);
+                hittable.Hit(1000, instance.gameplayCamera.transform.forward, instance, false, 1);
                 isAttack = true;
             }
         }
